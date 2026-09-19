@@ -1,0 +1,18 @@
+# 防止误提交本地文件
+
+# 填入了真实账号密码的本地副本（重要！切勿把凭据推送到仓库）
+*.local.sh
+portal_login.*.conf
+
+# 运行/调试产物
+*.log
+*.cookie
+ssh_result*.txt
+*_diag*.txt
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

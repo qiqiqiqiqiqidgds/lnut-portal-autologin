@@ -1,0 +1,5 @@
+# 统一行尾: 保证在任何平台 clone 后 shell 脚本均为 LF(OpenWrt 可直接执行)
+* text=auto
+*.sh text eol=lf
+*.init text eol=lf
+portal.conf.example text eol=lf

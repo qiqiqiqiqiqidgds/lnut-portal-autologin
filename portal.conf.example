@@ -1,0 +1,21 @@
+# /etc/portal.conf —— Portal 自动登录配置文件
+# 本文件不会被 install.sh 或脚本升级覆盖, 推荐在此填写账号。
+# 权限应设为 600: chmod 600 /etc/portal.conf
+# 刷机升级后保留配置: echo /etc/portal.conf >> /etc/sysupgrade.conf
+
+# ==== 必填两项 ====
+USERID="你的学号"     # <-- 改成你的学号(即平时在校园网登录页输入的账号)
+PASSWD="你的密码"     # <-- 改成你的校园网密码
+
+# ==== 以下为辽宁工业大学默认参数, 本校用户无需修改 ====
+# 外校用户请按 docs/protocol-analysis.md 抓包后取消注释并修改:
+#PORTAL_IP="10.9.18.71"        # Portal服务器地址
+#AC_NAME="NFV-BASE"            # AC名称
+#AC_IP="10.9.11.145"           # AC IP
+#AUTH_KEY="itellin"            # 认证密钥
+#REDIR_URL="http%3A%2F%2Fwww.sina.com.cn%2F"   # 认证后跳转目标(URL编码后)
+
+# ==== 可选调整 ====
+#PROBE_URL="http://www.baidu.com/"   # 在线探测目标(建议用域名)
+#MAX_RETRY=3                         # 单轮认证重试次数
+#INTERVAL=60                         # 检测周期(秒, 由守护服务读取)
